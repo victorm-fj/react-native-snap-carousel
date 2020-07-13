@@ -262,7 +262,8 @@ export default class Carousel extends Component {
         // Native driver for scroll events
         const scrollEventConfig = {
             listener: this._onScroll,
-            useNativeDriver: true
+            // useNativeDriver: true
+            useNativeDriver: false
         };
         this._scrollPos = new Animated.Value(0);
         const argMapping = props.vertical ?
